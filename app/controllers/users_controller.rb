@@ -5,11 +5,11 @@ class UsersController < ApplicationController
 
   end
 
-  def index
-  	@users = User.all
-  	# debugger
+  # def index
+  # 	@users = User.all
+  # 	# debugger
 
-  end
+  # end
 
   def new
   	@user = User.new
