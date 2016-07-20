@@ -1,1 +1,11 @@
-12.2
+12.2 Listing 12.14
+
+
+===============================================
+
+Issues:
+password_resets_controller > def_valid_user
+  Redirect to root triggered when following the link from the email. Authentication problem?
+  Uncomment line 4 when fixed!
+
+password_resets_test > line 14 Error

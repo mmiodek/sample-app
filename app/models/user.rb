@@ -29,8 +29,8 @@ class User < ActiveRecord::Base
 	end
 
   # Returns true if the given token matches the digest.
-  def authenticated?(attribute, token)
-    digest = send("#{attribute}_digest")
+  def authenticated?(attribute,token)
+    digest = self.send("#{attribute}_digest")
     return false if digest.nil?
     BCrypt::Password.new(digest).is_password?(token)
   end
@@ -61,6 +61,10 @@ class User < ActiveRecord::Base
   #Sents password reset emaik
   def send_password_reset_email
   	UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+  	reset_sent_at < 2.hours.ago
   end
 
 	private
