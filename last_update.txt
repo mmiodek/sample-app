@@ -1,5 +1,4 @@
-12.2 Listing 12.14
-
+Finished 13.1
 
 ===============================================
 
@@ -10,4 +9,4 @@ password_resets_controller > def_valid_user
 
 password_resets_test > line 14 Error
 
-Cannot push to Heroku
+Cannot push to Heroku => removed single_test
