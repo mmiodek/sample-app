@@ -9,3 +9,5 @@ password_resets_controller > def_valid_user
   Uncomment line 4 when fixed!
 
 password_resets_test > line 14 Error
+
+Cannot push to Heroku
