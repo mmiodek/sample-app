@@ -1,4 +1,5 @@
-Finished 13.1
+Finished at 13.4.1 due to Issue (line 15 below)
+Next: 14
 
 ===============================================
 
@@ -8,5 +9,12 @@ password_resets_controller > def_valid_user
   Uncomment line 4 when fixed!
 
 password_resets_test > line 14 Error
+
+microposts_interface_test
+	param is missing or the value is empty: micropost
+
+models > micropost.rb
+	uninitialized constant Micropost::PictureUploader
+	Uncomment line 5 and add Listing 13.62 when fixed
 
 Cannot push to Heroku => removed single_test
