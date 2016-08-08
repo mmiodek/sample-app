@@ -1,6 +1,5 @@
-Finished at 13.4.1 due to Issue (line 15 below)
-Next: 14
-
+Finished chapter 13 at 13.4.1 due to the issue (see line 16 below)
+Next: 14.3
 ===============================================
 
 Issues:
@@ -16,5 +15,11 @@ microposts_interface_test
 models > micropost.rb
 	uninitialized constant Micropost::PictureUploader
 	Uncomment line 5 and add Listing 13.62 when fixed
+
+14.24
+no redirect to log in page when logged out and going to following/followers user path
+
+14.40
+RecordNotFounds
 
 Cannot push to Heroku => removed single_test
